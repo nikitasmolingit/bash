@@ -1,0 +1,17 @@
+#!bin/bash
+
+var1="$1"
+var2="$2"
+var3="$3"
+
+if [[ "$var1" -lt "$var2" ]]
+then
+let var=$var2
+fi
+if [[ "$var1" -lt "$var3" ]]
+then
+let var=$var3
+fi
+
+echo "$var1"
+
