@@ -1,0 +1,3 @@
+#!/bin/bash
+man bash | grep -i —-only-matching "[a-zl\{4,\}" | \
+tr [:upper:] [:lower:] | sort | uniq -c | sort -r -n | head -3
