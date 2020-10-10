@@ -1,0 +1,11 @@
+#!/bin/bash
+
+plus=""
+some=""
+read plus
+while [[ "$plus" != "q" ]]
+do
+some="$some $plus"
+read plus
+done
+echo $some
