@@ -1,0 +1,21 @@
+
+#!/bin/bash
+
+echo "if y want to play vim push 1"
+echo "if y want to play nano push 2"
+echo "if y want to play links push 3"
+echo "if y want to play exit push 4"
+
+read num
+if [[ $num == 1 ]]
+then exec vi
+fi
+if [[ $num == 1 ]]
+then exec nano
+fi
+if [[ $num == 1 ]]
+then exec links
+fi
+if [[ $num == 1 ]]
+then exit
+fi
